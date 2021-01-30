@@ -100,7 +100,18 @@ header h3{
 	opacity:.7;
 	outline:none;
 }
-
+.slider::-webkit-slider-thumb{
+	-webkit-appearance:none;
+	width:25px;
+	height:25px;
+	background:hsl(174, 86%, 45%) url("images/icon-slider.svg");
+	background-repeat:no-repeat;
+	background-position:center;
+	cursor:pointer;
+	border-radius:50%;
+	border:1px solid hsl(174.1, 67.5%, 38.6%);
+	
+}
 .slider::-moz-range-thumb{
 	appearance: none;
 	width:25px;
@@ -117,7 +128,11 @@ header h3{
 	box-shadow:2px 15px 20px hsl(174, 86%, 45%);
 	
 }
-
+.slider::-webkit-slider-thumb:hover{
+	
+	box-shadow:2px 15px 20px hsl(174, 86%, 45%);
+	
+}
 .slider::-moz-range-progress {
   background-color: hsl(174, 77%, 80%); 
   height: 10px;
